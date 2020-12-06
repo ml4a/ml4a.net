@@ -1,0 +1,22 @@
+title: ml4a
+author: ml4a
+markdown: kramdown
+email: gene@genekogan.com
+default_description: >- 
+  ml4a is a collection of tools and educational resources for making art with machine learning.
+default_thumbnail: "images/monalisa_style.jpg"
+baseurl: "" 
+url: "ml4a.net"
+twitter_username: ml4a_
+github_username: ml4a
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - scripts/
