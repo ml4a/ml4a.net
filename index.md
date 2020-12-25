@@ -8,32 +8,15 @@ title: Machine learning for arts
   About
   Artworks
   Support / contribute (sponsors, cryptoart)
-
+  Classes
+  Book
+  Demos
 
 -->
 
 
 
 
-
-<div class="collapse bg-dark" id="navbarHeader">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 col-md-7 py-4">
-        <h4 class="text-white">About</h4>
-        <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-      </div>
-      <div class="col-sm-4 offset-md-1 py-4">
-        <h4 class="text-white">Contact</h4>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white">Follow on Twitter</a></li>
-          <li><a href="#" class="text-white">Like on Facebook</a></li>
-          <li><a href="#" class="text-white">Email me</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
@@ -80,36 +63,45 @@ title: Machine learning for arts
       <h1>Machine Learning for Art</h1>
       <p class="lead text-muted">ml4a is a collection of tools and educational resources which apply techniques from machine learning to arts and creativity.</p>
       <p>
-        <a href="#" class="btn btn-primary my-2">Tag 1</a>
-        <a href="#" class="btn btn-secondary my-2">Tag 2</a>
-        <a href="#" class="btn btn-secondary my-2">Tag 3</a>
-        <a href="#" class="btn btn-secondary my-2">Tag 4</a>
-        <a href="#" class="btn btn-secondary my-2">Tag 5</a>
+        <a href="#" class="btn btn-primary my-2">Models</a>
+        <a href="#" class="btn btn-secondary my-2">Fundamentals</a>
+        <a href="#" class="btn btn-secondary my-2">ml5.js</a>
       </p>
     </div>
   </section>
 
+
+
   <div class="album py-5 bg-light">
     <div class="container-xl">
       <div class="row">
-        {% for guide in site.data.guides %}
+        {% for guide in site.data.guides2 %}
           
           {% assign name = guide[0] %}
           {% assign title = guide[1].title %}
           {% assign description = guide[1].description %}
-          {% assign colab = guide[1].colab %}
-          {% assign thumb = guide[1].thumb %}
-          {% assign category = guide[1].category %}
-          {% assign summary = guide[1].summary %}
-      
+          {% assign github = guide[1].github %}
+
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img class="img-thumbnail" src="{{thumb}}" alt="{{title}}">
+              
+              {% if guide[1].video_thumb %}
+              <video loop autoplay >
+                <source src="/images/guides/{{name}}.mp4" alt="{{title}}" type="video/mp4">
+                <source src="/images/guides/{{name}}.webm" type="video/webm">
+                <img src="/images/guides/{{name}}.jpg">
+                </video>
+              {% else %}
+                <img class="img-thumbnail" src="/images/guides/{{name}}.jpg" alt="{{title}}">
+              {% endif %}
+                
+
+
               <div class="card-body">
                 <h5 class="card-title">{{title}}</h5>
                 <p class="card-text">{{description}}</p>
-                <a href="{{colab}}" class="btn btn-outline-primary"><img src="/images/icons/github.png">&nbsp;&nbsp;View code</a>
-                <a href="{{colab}}" class="btn btn-outline-primary"><img src="/images/icons/colab.png">&nbsp;&nbsp;Open in Colab</a>
+                <a href="https://github.com/ml4a/ml4a/blob/ml4a.net/{{github}}" class="btn btn-outline-primary"><img src="/images/icons/github.png">&nbsp;&nbsp;View code</a>
+                <a href="https://colab.research.google.com/github/ml4a/ml4a-guides/blob/ml4a.net/{{github}}" class="btn btn-outline-primary"><img src="/images/icons/colab.png">&nbsp;&nbsp;Open in Colab</a>
               </div>
             </div>
           </div>
