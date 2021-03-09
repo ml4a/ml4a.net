@@ -20,7 +20,7 @@
 		<!-- Meta -->	
 		<title>{{page.title}}</title>
 		<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="author" content="{{site.author}}">
 		<meta name="generator" content="Jekyll v4.1.1">
 		<meta name="description" content="{{description}}">
@@ -57,6 +57,6 @@
 		
 		{{content}}
 
-  </body>
+  	</body>
 	
 </html>
