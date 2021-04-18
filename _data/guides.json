@@ -43,7 +43,7 @@
 			"github": "examples/models/semantic_segmentation.ipynb"
 		},
 		"tacotron2": {
-			"title": "Text-to-speech synthesis.",
+			"title": "Text-to-speech synthesis",
 			"description": "Generate audio speech samples from text prompts.",
 			"github": "examples/models/tacotron2.ipynb"
 		},
@@ -136,9 +136,7 @@
 		"face_collage": {
 			"title": "Face Collage",
 			"description": "Analyze images of faces, and make silly collages of face parts.",
-			"github": "______TBD_______",
 			"p5js": "https://editor.p5js.org/AndreasRef/sketches/3dDj1e28Z"
 		}
 	}
-	
 }

@@ -12,8 +12,8 @@ title: Machine learning for arts
       <h1>Machine Learning for Art</h1>
       <p class="lead text-muted">ml4a is a collection of tools and educational resources which apply techniques from machine learning to arts and creativity.</p>
       <p>
-        <a href="#" class="btn btn-primary my-2">Models</a>
-        <a href="/fundamentals" class="btn btn-secondary my-2">Fundamentals</a>
+        <a href="/" class="btn btn-secondary my-2">Models</a>
+        <a href="#" class="btn btn-primary my-2">Fundamentals</a>
         <a href="/ml5" class="btn btn-secondary my-2">ml5.js</a>
       </p>
     </div>
@@ -22,7 +22,7 @@ title: Machine learning for arts
   <div class="album py-5 bg-light">
     <div class="container-xl">
       <div class="row">
-        {% for guide in site.data.guides.models %}
+        {% for guide in site.data.guides.fundamentals %}
           
           {% assign name = guide[0] %}
           {% assign title = guide[1].title %}
@@ -33,7 +33,7 @@ title: Machine learning for arts
             <div class="card mb-4 shadow-sm">
               
               {% if guide[1].video_thumb %}
-              <video style="width:100%" loop autoplay >
+              <video loop autoplay >
                 <source src="/images/guides/{{name}}.mp4" alt="{{title}}" type="video/mp4">
                 <source src="/images/guides/{{name}}.webm" type="video/webm">
                 <img src="/images/guides/{{name}}.jpg">
@@ -41,7 +41,7 @@ title: Machine learning for arts
               {% else %}
                 <img class="img-thumbnail" src="/images/guides/{{name}}.jpg" alt="{{title}}">
               {% endif %}
-                
+
               <div class="card-body">
                 <h5 class="card-title">{{title}}</h5>
                 <p class="card-text">{{description}}</p>

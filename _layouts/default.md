@@ -24,13 +24,15 @@
 		<meta name="author" content="{{site.author}}">
 		<meta name="generator" content="Jekyll v4.1.1">
 		<meta name="description" content="{{description}}">
+
+		<!-- Twitter -->
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content="{{title}}" />
 		<meta name="twitter:description" content="{{description}}" />
-		<meta name="twitter:image" content="https://mars.college/{{thumbnail}}" />
+		<meta name="twitter:image" content="/images/favicon/ml4a_400x400.jpg" />
 		<meta property="og:title" content="{{title}}">
 		<meta property="og:description" content="{{description}}" />
-		<meta property="og:image" content="https://mars.college/{{thumbnail}}" />
+		<meta property="og:image" content="/images/favicon/ml4a_400x400.jpg" />
 
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
