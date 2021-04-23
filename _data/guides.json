@@ -137,6 +137,37 @@
 			"title": "Face Collage",
 			"description": "Analyze images of faces, and make silly collages of face parts.",
 			"p5js": "https://editor.p5js.org/AndreasRef/sketches/3dDj1e28Z"
+		},
+		"pinch_to_zoom": {
+			"title": "Pinch to Zoom",
+			"description": "Use hand recognition to zoom your webcam image.",
+			"p5js": "https://editor.p5js.org/tlsaeger/sketches/CqyFjwZvm"
+		},
+		"simple_face_mask": {
+			"title": "Simple Face Mask",
+			"description": "Use Facemesh to analyse a face via the webcam and creates a simple face mask",
+			"p5js": "https://editor.p5js.org/tlsaeger/sketches/bGBDeBsVv"
+		},
+		"simple_kmeans_clustering": {
+			"title": "Simple K-Means Clustering",
+			"description": "Basic example to get started and understand k-means clustering.",
+			"p5js": "https://editor.p5js.org/tlsaeger/sketches/_QCppDOa8"
+		},
+		"rock_paper_scissors": {
+			"title": "Classify Rock Paper Scissors",
+			"description": "Train a knn algorithm to classify handposes on rock, paper and scissors.",
+			"p5js": "https://editor.p5js.org/tlsaeger/sketches/xL2DrkcEb"
+		},
+		"face_spaghetti": {
+			"title": "Face Spaghetti",
+			"description": "Turn your face into spaghetti.",
+			"p5js": "https://editor.p5js.org/tlsaeger/sketches/JE4LdMT8L"
+		},
+		"kmeans_handpose": {
+			"title": "K-Means Handpose",
+			"description": "Experiment with K-Means by clustering your different hand poses.",
+			"p5js": "https://editor.p5js.org/tlsaeger/sketches/IbvKrHMj4"
 		}
+
 	}
 }
